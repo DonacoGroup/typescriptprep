@@ -23,6 +23,7 @@ yarn init -y
 
 # Initialize Git
 git init
+echo "node_modules \n .env" >> .gitignore
 
 # Add typescript to project
 yarn add typescript --dev 
