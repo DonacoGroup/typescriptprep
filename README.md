@@ -57,10 +57,10 @@ tsc --init
 
 # Add eslint configuration to check syntax, find problems and enforce coding style.
   yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
-npx eslint --init
+npm init @eslint/config
 
 # Configure ESLint
-```
+```JSON
 // .eslintrc
 {
   "parser": "@typescript-eslint/parser",
@@ -82,6 +82,7 @@ npx eslint --init
   },
 }
 ```
+```
 # Add a lint command in package.json
 ```
 ...
@@ -98,7 +99,7 @@ yarn add jest ts-jest @types/jest --dev
 npx ts-jest config:init
 or mannually add jest.config.js file:
 ```
-```JSON
+```JS
 export default {
   "roots": [
     "<rootDir>/src"
